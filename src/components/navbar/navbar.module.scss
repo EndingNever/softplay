@@ -1,22 +1,40 @@
 .navContainer {
+  // outline: 2px solid orange;
   background: rgba(255, 255, 255, 0.5);
   height: 15vh;
   display: flex;
   align-items: center;
-  // justify-content: center;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  padding-right: 2.5rem;
 
-  .navToggle{ //* Opens nav in mobile
-    
+  .navToggle {
+    //* Opens nav in mobile
+    height: auto;
+    width: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // outline: 2px solid green;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      // outline: 2px solid red;
+      object-fit: contain;
+    }
   }
 
-  .phoneNumContainer{ //* Phone number so it is not transparent
+  .phoneNumContainer {
+    //* Phone number so it is not transparent
     color: black;
     opacity: 1;
   }
-  &.navContainer>*:nth-child(2) {
-    outline: 2px solid red;
+
+  &.navContainer > *:nth-child(2) {
+    // outline: 2px solid red;
     margin-right: auto;
+    // margin-right: 35%;
     margin-left: auto;
-    // justify-self: center;
   }
 }
