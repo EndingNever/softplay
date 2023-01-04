@@ -1,0 +1,22 @@
+.navContainer {
+  background: rgba(255, 255, 255, 0.5);
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+
+  .navToggle{ //* Opens nav in mobile
+    
+  }
+
+  .phoneNumContainer{ //* Phone number so it is not transparent
+    color: black;
+    opacity: 1;
+  }
+  &.navContainer>*:nth-child(2) {
+    outline: 2px solid red;
+    margin-right: auto;
+    margin-left: auto;
+    // justify-self: center;
+  }
+}
