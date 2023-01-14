@@ -4,7 +4,7 @@
   height: 15vh;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
   padding-left: 1rem;
   padding-right: 2.5rem;
   position: sticky;
@@ -12,12 +12,49 @@
   .navToggle {
     //* Opens nav in mobile
     height: auto;
-    width: 1.5rem;
+    width: 1.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
     // outline: 2px solid green;
 
+    .navMenu_mobile { // This opens up the nav menu, allows it to cover the screen
+      // outline: 2px solid red;
+      position: fixed;
+      height: 100vh;
+      width: 100vw;
+      left: 0px;
+      bottom: 0px;
+      background-color: white;
+      z-index: 2000;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+
+      .navMenu_mobile_close {
+        // outline: 2px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        right: 0px;
+        margin-right: 1rem;
+      }
+      .navMenu_mobile_items{ // Give the nav items a smaller container
+        outline: 2px solid black;
+        height: 50%;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 2rem;
+      }
+
+      li {
+        list-style: none;
+      }
+    }
     img {
       max-width: 100%;
       height: auto;
