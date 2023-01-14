@@ -19,26 +19,29 @@
     // outline: 2px solid green;
 
     .navMenu_mobile { // This opens up the nav menu, allows it to cover the screen
-      // outline: 2px solid red;
-      position: fixed;
+      // border: 2px solid red;
+      position: absolute;
       height: 100vh;
       width: 100vw;
       left: 0px;
-      bottom: 0px;
+      top: 0px;
+      // bottom: 0px;
       background-color: white;
       z-index: 2000;
       display: flex;
       align-items: flex-start;
       justify-content: center;
 
-      .navMenu_mobile_close {
+
+      .navMenu_mobile_close { //Close the nav menu
         // outline: 2px solid red;
         display: flex;
         align-items: center;
         justify-content: center;
         position: fixed;
         right: 0px;
-        margin-right: 1rem;
+        margin-right: 5vw;
+        margin-top: 5vh;
       }
       .navMenu_mobile_items{ // Give the nav items a smaller container
         outline: 2px solid black;
@@ -48,7 +51,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        margin-top: 2rem;
+        margin-top: 10vh;
       }
 
       li {
@@ -74,5 +77,12 @@
     margin-right: auto;
     // margin-right: 35%;
     margin-left: auto;
+  }
+}
+
+// TODO Nav is removed, styling for non mobile
+@media screen and (min-width: 600px) {
+  .navContainer{
+    display: none;
   }
 }

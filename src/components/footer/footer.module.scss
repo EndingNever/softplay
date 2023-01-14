@@ -1,40 +1,48 @@
-.footerContainer {
-  // outline: 2px solid red;
-  height: 4rem;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  position: fixed;
-  bottom: 0px;
-  background-color: white;
-  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);;
-  z-index: 1000;
-
-  .box {
+@media screen and (max-width: 600px) {
+  .footerContainer {
+    // outline: 2px solid red;
+    height: 4rem;
+    width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 33%;
-    height: 100%;
-    // outline: 2px solid purple;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 
-    svg {
-      width: auto;
-      height: 1.3rem;
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 33%;
+      height: 100%;
+      // outline: 2px solid purple;
+
+      svg {
+        width: auto;
+        height: 1.3rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+      .emailSVG {
+        fill: #be1867;
+      }
+      .phoneSVG {
+        fill: rgb(15, 230, 15);
+      }
+      .instaSVG {
+        fill: #3f3f3f;
+      }
     }
-    p {
-      font-size: 0.8rem;
-    }
-    .emailSVG {
-      fill: #be1867;
-    }
-    .phoneSVG {
-      fill: rgb(15, 230, 15);
-    }
-    .instaSVG{
-      fill: #3f3f3f
-    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .footerContainer{
+    display: none;
   }
 }
